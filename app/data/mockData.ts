@@ -1,0 +1,53 @@
+import { SearchResult } from '../types/types';
+
+export const MOCK_DATABASE: SearchResult[] = [
+  {
+    "url": "https://www.2merkato.com/directory/41254-midea",
+    "company_name": "K.MIKEDEM GENERAL IMPORT & EXPORT",
+    "logo_url": "https://www.2merkato.com/images/mtree/listings/m/38481.jpg",
+    "phone_main": "+251 99 0171 211",
+    "location": "Bole Medhanialem, Addis Ababa",
+    "primary_category": "Electro-Mechanical Appliances",
+    "website": "https://kmikedem.com",
+    "email": "MideaB2B@outlook.com",
+    "description_full": "Established in 1995, K.Mikedem is a dynamic Ethiopian company engaged in export, import, real estate, and food processing. Backed by decades of experience and strong international partnerships, the company is known for delivering high-quality products and trusted services across sectors...",
+    "products_and_services": ["https://www.2merkato.com/images/mtree/listings/s/38483.png", "https://www.2merkato.com/images/mtree/listings/s/38484.jpg"],
+  },
+  {
+    "url": "https://www.2merkato.com/directory/41278-lubaba-granite-marble-and-art-stone",
+    "company_name": "LUBABA GRANITE MARBLE & ART STONE",
+    "logo_url": "https://www.2merkato.com/images/mtree/listings/m/38830.jpg",
+    "phone_main": "09 66 702 367",
+    "location": "Tulu dimtu alem bank, Addis Ababa",
+    "primary_category": "Building Materials",
+    "website": "N/A",
+    "email": "Lubabaeibre2367@Gmail.com",
+    "description_full": "Lubaba Granite Marble and Art Stone is a dynamic, client-focused company in Addis Ababa, Ethiopia, specializing in high-quality finishing work and premium construction materials...",
+    "products_and_services": ["https://www.2merkato.com/images/mtree/listings/s/38831.jpg", "https://www.2merkato.com/images/mtree/listings/s/38832.jpg"],
+  },
+  {
+    "url": "https://www.2merkato.com/directory/41049-eureka-consulting-services-pvtltdco",
+    "company_name": "EUREKA CONSULTING SERVICES",
+    "logo_url": "https://www.2merkato.com/images/mtree/listings/m/35667.png",
+    "phone_main": "(+251)-911-51-62-62",
+    "location": "Gullele Sub City, Addis Ababa",
+    "primary_category": "Consultancy",
+    "website": "N/A",
+    "email": "N/A",
+    "description_full": "Eureka Consulting Services Pvt.Ltd.Co. established in 2010 according to the Ethiopian trade law... (Full description preserved in logic)...",
+    "products_and_services": [],
+  },
+
+  {
+    "url": "https://www.2merkato.com/directory/16100-emu-general-importer-plc",
+    "company_name": "Emu General Importer PLC",
+    "logo_url": "https://www.2merkato.com/images/mtree/listings/m/5263.png",
+    "phone_main": "(+251)-911-51-62-62",
+    "location": "Addis Ababa, Ethiopia",
+    "primary_category": "Consultancy",
+    "website": "N/A",
+    "email": "N/A",
+    "description_full": "Emu General Importer PLC has established itself as one of the renowned importers of high quality diesel generators, water pumping sets, construction equipment, and their spare parts to Ethiopia since 1997. Emu General Importer PLC is trusted across Ethiopia to deliver a wide range of power generation systems from small standby diesel generators to large-scale turnkey power projects. Our company has received several testimonial letters from numerous clients we supplied attesting to our good performance. Our company undertakes total turnkey contracts/ projects which include Designing, Manufacturing, Supplying, Erection, Testing and Commissioning. ",
+    "products_and_services":["https://www.2merkato.com/images/mtree/listings/s/5179.jpg", "https://www.2merkato.com/images/mtree/listings/s/5181.jpg"],
+  },
+];

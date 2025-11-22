@@ -20,10 +20,14 @@
 
 This is a simple Depo app built with FastAPI and Next.js. I followed a typical FastAPI project structure and incorporated key FastAPI concepts such as route isolation and dependency injection. For asynchronous operations, I used aiohttp for HTTP requests, asyncpg to connect to a serverless database (Neon), and hosted a Redis cache for efficient data storage and retrieval.
 </p>
-
+<p>
+You might exxperance some dealy when beacuse when it loses a request the backend sleeps to conserve resource 
+</p>
 ## 
 ```py
     
+
+    backend uvicorn main:app --reload 
 ```
 
 
