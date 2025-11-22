@@ -1,5 +1,5 @@
 <div>
-    <h1 align="center"> Merkato Scrapper</h1>
+    <h1 align="center"> 2Merkato Scraper</h1>
 </div>
 
 <p align="center">A Simple webapp that allow you to scrape data from 2merkato.com</p>
