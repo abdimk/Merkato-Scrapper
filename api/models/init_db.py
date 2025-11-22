@@ -4,14 +4,12 @@ A simple init_db file for neon like similar to migrations in django
 
 """
 
-
 import asyncio
 import sys
 from pathlib import Path
 
 project_root = Path(__file__).resolve().parent
 sys.path.append(str(project_root))
-
 
 from  database import engine, Base
 from models import Company 

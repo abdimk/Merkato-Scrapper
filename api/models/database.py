@@ -12,6 +12,11 @@ NEON_URL = os.environ.get("NEON_URL")
 if not NEON_URL:
     raise ValueError("NEON_URL environment variable is not set.")
 
+
+"""
+These are the parameters that asyncpg does not support, 
+so I added them to UNWANTED_PARAMS to remove them later from the URL.
+"""
 UNWANTED_PARAMS = ['sslmode', 'channel_binding'] 
 
 parsed_url = urlparse(NEON_URL)

@@ -191,34 +191,3 @@ async def main_scraper(search_query, max_pages_limit=None):
         detail_tasks = [fetch_and_scrape_details(session, link) for link in all_links]
         return await asyncio.gather(*detail_tasks)
 
-"""
-if __name__ == "__main__":
-    QUERY = "importer"
-    MAX_PAGES_LIMIT = 3
-
-    logger.info(f"Starting 2merkato.com Scraper for query: '{QUERY}'")
-    results = asyncio.run(main_scraper(QUERY, max_pages_limit=MAX_PAGES_LIMIT))
-
-    logger.info("\nScraped Results Summary (Top 5)")
-    if results:
-        success_results = [r for r in results if 'error' not in r]
-        logger.info(f"Total successfully scraped companies: {len(success_results)}")
-
-        for i, company in enumerate(success_results[:5]):
-            logger.info(f"\nResult {i+1}: **{company.get('company_name', 'N/A')}**")
-            logger.info(f"  > **Logo URL:** {company.get('logo_url', 'N/A')}")
-            logger.info(f"  > **Main Phone:** {company.get('phone_main', 'N/A')}")
-            logger.info(f"  > Location: {company.get('location', 'N/A')}")
-            logger.info(f"  > Website: {company.get('website', 'N/A')}")
-
-            products = company.get('products_and_services', [])
-            if products:
-                logger.info(f"  > **Products/Services Found:** {len(products)} images")
-                logger.info(f"    - Example Product Image: {products[0]}")
-            else:
-                logger.info("  > **Products/Services Found:** None")
-
-            logger.info(f"  > Snippet: {company.get('description_full', 'N/A')[:70]}...")
-    else:
-        logger.info("No results were successfully scraped.")
-"""

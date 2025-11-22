@@ -28,8 +28,6 @@ def get_total_requests():
     value = r.get("total_requests")
     return int(value) if value else 0
 
-
-
 def increment_keyword_search(keyword):
     r.incr(f"search_count:{keyword}")
     r.zincrby("keyword_rankings", 1, keyword)

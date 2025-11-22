@@ -3,7 +3,6 @@ from pydantic import BaseModel, HttpUrl, Field
 
 
 
-
 class SearchSchema(BaseModel):
     term:str
     response_limit: Optional[int] = 5
@@ -27,3 +26,4 @@ class CompanyResponse(BaseModel):
 class SearchResponse(BaseModel):
     source: str
     results: List[CompanyResponse]
+

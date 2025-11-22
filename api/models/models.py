@@ -1,12 +1,11 @@
-from sqlalchemy import Column, Integer, String, Text, JSON
-
 import sys
 from pathlib import Path
-
-from models.database import Base 
+from sqlalchemy import Column, Integer, String, Text, JSON
 
 project_root = Path(__file__).resolve().parent
 sys.path.append(str(project_root))
+
+from models.database import Base 
 
 
 class Company(Base):
@@ -23,3 +22,4 @@ class Company(Base):
     description_full = Column(Text, nullable=True)
     primary_category = Column(String(255), nullable=True)
     products_and_services = Column(JSON, nullable=True)
+
