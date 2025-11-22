@@ -11,7 +11,7 @@ just by adding this to the source file it pervernts any relative import issues
 project_root = Path(__file__).resolve().parent.parent
 sys.path.append(str(project_root))
 
-from ..api.routes.comp import router as company_router
+from api.routes.comp import router as company_router
 
 
 
