@@ -24,6 +24,11 @@ app = FastAPI(
 
 app.include_router(company_router, prefix="/api")
 
+@app.get()
+async def index():
+    return {"API":"working.."}
+
+
 
 @app.api_route("/{full_path:path}", methods=["GET", "POST", "PUT", "DELETE", "PATCH"], operation_id="catch_all_fallback")
 async def catch_all_routes(request: Request, full_path: str):

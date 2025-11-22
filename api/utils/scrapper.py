@@ -191,6 +191,7 @@ async def main_scraper(search_query, max_pages_limit=None):
         detail_tasks = [fetch_and_scrape_details(session, link) for link in all_links]
         return await asyncio.gather(*detail_tasks)
 
+"""
 if __name__ == "__main__":
     QUERY = "importer"
     MAX_PAGES_LIMIT = 3
@@ -220,3 +221,4 @@ if __name__ == "__main__":
             logger.info(f"  > Snippet: {company.get('description_full', 'N/A')[:70]}...")
     else:
         logger.info("No results were successfully scraped.")
+"""
