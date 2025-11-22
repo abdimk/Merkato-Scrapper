@@ -24,6 +24,46 @@ This is a simple Depo app built with FastAPI and Next.js. I followed a typical F
 You might experience some delays because the backend goes to sleep when idle to conserve resources.
 </p>
 
+  
+<div align="center">
+<h2></h1><img src="https://telegra.ph/file/c182d98c9d2bc0295bc86.png" width="20"><b>  
+Backend Structure<b></h1>
+</div>
+
+
+```
+
+
+├── Root
+│   ├── main.py
+|   ├── requirements.txt
+│   ├── api
+│   │   ├── api_schema
+│   │   │   ├── __init__.py
+│   │   │   └── schema.py
+│   │   ├── cache
+|   |   |   |    redis.py
+│   │   │   └── __init__.py
+│   │   ├── models
+│   │   │   ├── __init__.py
+|   |   |   |__ init_db.py  (migrations)
+│   │   │   ├── database.py
+│   │   │   └── init_db.py
+│   │   ├── routes
+│   │   │   ├── __init__.py
+│   │   │   └── comp.py
+│   │   ├── tests
+|   |   |   |  tests.py (i write a simple test to check the routes in prodution)
+│   │   │   └── __init__.py
+│   │   └── utils
+│   │       ├── __init__.py
+│   │       └── scrapper.py   (the web scraper script)              
+|___|                            
+
+```
+  
+-------
+
 
 ```py
     [Backend]
