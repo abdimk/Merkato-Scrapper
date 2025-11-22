@@ -24,10 +24,15 @@ This is a simple Depo app built with FastAPI and Next.js. I followed a typical F
 You might experience some delays because the backend goes to sleep when idle to conserve resources.
 </p>
 
-```py
-    
 
+```py
+    [Backend]
     backend uvicorn main:app --reload 
+
+
+    [frontend]
+    npm run build
+    npm run dev
 ```
 
 

@@ -25,4 +25,3 @@ async def test_search_endpoint_status_code_async():
         response = await client.post(url, json=payload, headers=headers)
 
     assert response.status_code == 200, f"Expected 200 but got {response.status_code}"
-Run:
