@@ -23,9 +23,6 @@ origins = [
 allow_origin_regex = r"https://.*\.vercel\.app"
 
 app = FastAPI(
-    CORSMiddleware,
-    allow_origins=origins, 
-    allow_origin_regex=allow_origin_regex,
     title="2merkato Scraper API",
     description="A Simple Asynchronous web scraper for 2merkato.com with caching and database storage.",
     version="1.0.0",
@@ -34,7 +31,15 @@ app = FastAPI(
 
 
 app.include_router(company_router, prefix="/api")
-
+# Add CORS middleware properly
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_origin_regex=allow_origin_regex,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 @app.get("/")
 async def index():
     return {"API":"is Up and running"}
