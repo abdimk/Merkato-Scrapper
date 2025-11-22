@@ -17,6 +17,7 @@ from api.routes.comp import router as company_router
 
 origins = [
         "http://localhost:3000",
+        "https://merkato-scrapper.vercel.app/"
         
     ]
 
