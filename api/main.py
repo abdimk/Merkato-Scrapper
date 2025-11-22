@@ -24,7 +24,7 @@ app = FastAPI(
 
 app.include_router(company_router, prefix="/api")
 
-@app.get()
+@app.get("/")
 async def index():
     return {"API":"working.."}
 
