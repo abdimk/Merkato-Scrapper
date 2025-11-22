@@ -1,6 +1,7 @@
 import React from 'react';
 import { SearchResult } from '../types/types';
 import { Icons } from '../utils/icons';
+import Image from "next/image";
 
 interface SearchResultItemProps {
   result: SearchResult;
@@ -68,13 +69,15 @@ export const SearchResultItem: React.FC<SearchResultItemProps> = ({ result, isEx
             overflow: 'hidden',
             flexShrink: 0
           }}>
-            <img
-              src={result.logo_url}
+            <Image
+              src={result.logo_url || "/placeholder.png"}
               alt="icon"
               onError={(e) => {
-                (e.target as HTMLImageElement).src = '/placeholder.png';
+                (e.target as HTMLImageElement).src = "/placeholder.png";
               }}
-              style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+              width={100}
+              height={100}
+              style={{ objectFit: "cover", width: "100%", height: "100%" }}
             />
           </div>
           <div style={{ minWidth: 0, flex: 1 }}>
@@ -198,7 +201,7 @@ export const SearchResultItem: React.FC<SearchResultItemProps> = ({ result, isEx
                 textTransform: 'uppercase', 
                 marginBottom: '8px' 
               }}>
-                /// Description
+              Description
               </h4>
               <p style={{ 
                 lineHeight: '1.5', 
@@ -222,7 +225,7 @@ export const SearchResultItem: React.FC<SearchResultItemProps> = ({ result, isEx
                 textTransform: 'uppercase', 
                 marginBottom: '12px' 
               }}>
-                /// Visual Assets ({result.products_and_services.length})
+                Visual Assets ({result.products_and_services.length})
               </h4>
               <div style={{ 
                 display: 'grid', 

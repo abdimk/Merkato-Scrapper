@@ -266,7 +266,7 @@ const Page: React.FC = () => {
               fontSize: '1.1rem',
               fontWeight: 'bold'
             }}>
-              NO RESULTS FOUND FOR "{searchTerm}"
+              NO RESULTS FOUND FOR &quot;{searchTerm}&quot;
             </div>
           ) : displayResults.length > 0 ? (
             displayResults.map((result) => (

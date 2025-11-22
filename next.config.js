@@ -1,5 +1,15 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  images: {
+    domains: ["www.2merkato.com"],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "www.2merkato.com",
+      },
+    ],
+  },
+
   rewrites: async () => {
     return [
       {
