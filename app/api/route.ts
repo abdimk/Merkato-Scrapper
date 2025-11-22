@@ -10,7 +10,7 @@ export async function POST(request: Request) {
     
 
     const controller = new AbortController();
-    const timeoutId = setTimeout(() => controller.abort(), 60000);
+    const timeoutId = setTimeout(() => controller.abort(), 90000);
     
     const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/search`, {
     method: 'POST',
