@@ -17,7 +17,7 @@ def get_cache(key: str):
     result = r.get(key)
     return json.loads(result) if result else None
 
-def set_cache(key: str, value, expire=3600):
+def set_cache(key: str, value, expire=18000):
     r.set(key, json.dumps(value), ex=expire)
 
 
