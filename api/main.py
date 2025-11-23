@@ -17,7 +17,9 @@ from routes.comp import router as company_router
 
 origins = [
         "http://localhost:3000",
-        "https://merkato-scrapper.vercel.app/"
+        "https://merkato-scrapper.vercel.app/",
+        "https://merkato-scrapper.vercel.app",
+        "https://spotless-flossy-abdiyang-234aae35.koyeb.app"
         
     ]
 
