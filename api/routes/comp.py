@@ -13,7 +13,7 @@ from utils.scrapper import main_scraper
 from models.database import get_db
 from models.models import Company
 from api_schema.schema import CompanyResponse,SearchSchema,SearchResponse
-from api.cache.redis import (
+from cache.redis import (
     get_cache, set_cache, 
     get_total_requests, 
     get_top_keywords, 
