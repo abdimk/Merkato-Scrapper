@@ -8,7 +8,7 @@ from pathlib import Path
 project_root = Path(__file__).resolve().parent.parent
 sys.path.append(str(project_root))
 
-from api.utils.scrapper import main_scraper 
+from utils.scrapper import main_scraper 
 
 from models.database import get_db
 from models.models import Company
